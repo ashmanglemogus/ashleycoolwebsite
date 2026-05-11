@@ -1,0 +1,243 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* 🤓☝ */
+
+
+@font-face {
+  font-family: Font;
+  src: url('Comic Sans MS.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1.dashed {
+  border-style: dashed;
+}
+
+/* table styling (main page layout) */
+
+/* make the first and last children of each row take up 20% of the width */
+/* tr>*:first-child,
+tr>*:last-child {
+  width: 20%;
+} */
+
+/* make the middle child of each row take up 60% of the width */
+/* tr>*:nth-child(2) {
+  width: 60%;
+} */
+
+/* link container styling */
+#links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin-top: 10px;
+}
+
+html {
+  /* background-color: #f5e6ff; */
+  background-image: url("img/patern.png");
+
+  /* width: 1024px;
+  height: 768px;
+   */
+  /* filter: hue-rotate(-45deg); */
+}
+
+body {
+  font-family: 'Font';
+
+  /* background-color: #000; */
+  color: #1c2055;
+  max-width: 800px;
+  margin: 0 auto;
+  /* trick to center the content, automatic horizontal margins */
+
+  /* background-color: black; */
+  /* padding: 10px; */
+
+  /* min-height: 100vh; */
+
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+body {
+  font-smooth: never;
+}
+
+/* #container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+
+} */
+
+.sideThing {
+  position: absolute;
+  margin-left: -350px;
+  margin-top: 20px;
+  z-index: -1;
+}
+
+p {
+  padding-left: 16px;
+  padding-right: 32px;
+  /* font-size: 20px; */
+  row-gap: 200px;
+  text-align: justify;
+
+}
+
+p.small {
+  line-height: 0.5;
+  font-size: 16px;
+}
+
+.containment {
+  /* position: absolute; */
+  /* border: 1px solid hotpink; */
+  /* margin: auto; */
+
+  margin-left: 40px;
+  margin-top: 60px;
+  width: 768px;
+  height: 940px;
+  /* border-radius: 16px; */
+  /* background-color: #ffffff; */
+  background-image: url("img/paper2.png");
+  background-repeat: no-repeat;
+}
+
+.tableLeft {
+  /* position: absolute; */
+  float: left;
+  /* border: 1px solid hotpink; */
+  /* margin: 30px; */
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 512px;
+  height: auto;
+  border-radius: 16px;
+  background-color: #e9f0ff;
+
+  /* background-image: url("img/bg.png"); */
+}
+
+.tableRight {
+  position: fixed;
+  float: right;
+  /* border: 1px solid hotpink; */
+  margin: 30px;
+  margin-left: 580px;
+  width: 200px;
+  height: 420px;
+  /* border-radius: 16px; */
+  /* background-color: #edceee; */
+
+  background-image: url("img/paper3.png");
+  background-repeat: no-repeat;
+}
+
+.thingAtTheTop {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -148px;
+  z-index: 1;
+}
+
+.tableTitle {
+  position: static;
+  margin-left: 20px;
+  margin-top: -32px;
+  z-index: 1;
+}
+
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* creates a 16:9 aspect ratio */
+}
+
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* And set the max-width of the parent element */
+.video-wrap {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.sideButton {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+}
+
+/* gallery shit */
+
+/***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
+
+.ezgallery.montage {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ezgallery.montage img {
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.ezgallery.horizontal {
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.ezgallery.horizontal a {
+  text-align: center;
+}
+
+.ezgallery.horizontal img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  object-position: bottom;
+}

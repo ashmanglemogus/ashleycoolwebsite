@@ -1,0 +1,116 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* 🤓☝ */
+
+
+@font-face {
+  font-family: Font;
+  src: url('../Comic Sans MS.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1.dashed {
+  border-style: dashed;
+}
+
+/* table styling (main page layout) */
+
+/* make the first and last children of each row take up 20% of the width */
+/* tr>*:first-child,
+tr>*:last-child {
+  width: 20%;
+} */
+
+/* make the middle child of each row take up 60% of the width */
+/* tr>*:nth-child(2) {
+  width: 60%;
+} */
+
+/* link container styling */
+#links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+
+  margin-top: 10px;
+}
+
+body {
+  font-family: 'Font';
+
+  /* background-color: #000; */
+  color: #1c2055;
+  max-width: 800px;
+  margin: 0 auto;
+  /* trick to center the content, automatic horizontal margins */
+
+  /* background-color: black; */
+  padding: 10px;
+
+  min-height: 100vh;
+
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+body {
+  font-smooth: never;
+}
+
+/* #container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+
+} */
+p.title {
+  font-size: 50px;
+  /* line-height: 75%; */
+  /* text-align: justify; */
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+
+p.desc {
+  line-height: 1.25;
+  font-size: 16px;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* creates a 16:9 aspect ratio */
+}
+
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  /* Removes bottom whitespace gap */
+}
+
+/* And set the max-width of the parent element */
+.video-wrap {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
